@@ -6,10 +6,8 @@
     <title>Кубик Рубика - Обучение</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 0; line-height: 1.6; }
-        
-        /* Шапка и меню (как в уроке) */
         header { background-color: #2c3e50; color: white; padding: 1rem; display: flex; align-items: center; justify-content: space-between; }
-        .back-btn { color: white; text-decoration: none; font-size: 1.5rem; padding-right: 15px; visibility: hidden; } /* Скрываем стрелку на главной */
+        .back-btn { color: white; text-decoration: none; font-size: 1.5rem; padding-right: 15px; visibility: hidden; }
         .header-title { margin: 0; font-size: 1.2rem; flex-grow: 1; text-align: center; }
         .menu-btn { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0; padding-left: 15px; }
         
@@ -29,31 +27,18 @@
         
         .steps { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px; }
         
-        /* Базовый стиль для всех кнопок */
-        .step-btn { display: block; padding: 15px 20px; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold; font-size: 1.1rem; border: none; cursor: pointer; transition: all 0.1s ease; }
-
-        /* Кнопка 1: Классическая 3D */
-        .btn-3d { background: #3498db; color: white; box-shadow: 0 6px 0 #21618c; }
-        .btn-3d:active { box-shadow: 0 2px 0 #21618c; transform: translateY(4px); }
-
-        /* Кнопка 2: Стеклянная (Glassmorphism) */
-        .btn-glass { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5); color: #2c3e50; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .btn-glass:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.2); }
-
-        /* Кнопка 3: Плоская с тенью */
-        .btn-flat { background: #9b59b6; color: white; box-shadow: 0 8px 15px rgba(155, 89, 182, 0.3); }
-        .btn-flat:active { box-shadow: 0 2px 5px rgba(155, 89, 182, 0.3); transform: translateY(4px); }
-
-        /* Кнопка 4: Неоновая */
-        .btn-neon { background: #2c3e50; color: #00ffcc; border: 2px solid #00ffcc; box-shadow: 0 0 10px #00ffcc, inset 0 0 10px #00ffcc; }
-        .btn-neon:active { background: #00ffcc; color: #2c3e50; box-shadow: 0 0 20px #00ffcc, inset 0 0 20px #00ffcc; }
-
-        /* Кнопка 5: Мягкая (Soft UI) */
-        .btn-soft { background: #e0e5ec; color: #2c3e50; box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5); }
-        .btn-soft:active { box-shadow: inset 5px 5px 10px rgb(163,177,198,0.6), inset -5px -5px 10px rgba(255,255,255, 0.5); transform: translateY(1px); }
-
-        /* Заблокированная кнопка (Скоро) */
-        .step-btn.disabled { opacity: 0.6; pointer-events: none; filter: grayscale(50%); }
+        /* МАКСИМАЛЬНО ПРОСТЫЕ КНОПКИ ДЛЯ ПРОВЕРКИ */
+        .step-btn { 
+            display: block; padding: 15px 20px; border-radius: 8px; text-decoration: none; 
+            text-align: center; font-weight: bold; font-size: 1.1rem; background: #3498db; color: white;
+            box-shadow: 0 4px 0 #21618c;
+        }
+        .step-btn:active { 
+            box-shadow: 0 1px 0 #21618c; transform: translateY(3px); 
+        }
+        .step-btn.disabled { 
+            background: #bdc3c7; box-shadow: 0 4px 0 #95a5a6; pointer-events: none; 
+        }
     </style>
 </head>
 <body>
@@ -85,11 +70,11 @@
         <div class="card">
             <h2>Этапы сборки</h2>
             <div class="steps">
-                <a href="cross.html" class="step-btn btn-3d">1. Крест (Классическая 3D)</a>
-                <a href="#" class="step-btn btn-glass disabled">2. Первый слой (Стекло)</a>
-                <a href="#" class="step-btn btn-flat disabled">3. Второй слой (Плоская)</a>
-                <a href="#" class="step-btn btn-neon disabled">4. Верхняя грань OLL (Неон)</a>
-                <a href="#" class="step-btn btn-soft disabled">5. Углы и рёбра PLL (Мягкая)</a>
+                <a href="cross.html" class="step-btn">1. Крест</a>
+                <a href="#" class="step-btn disabled">2. Первый слой (Скоро)</a>
+                <a href="#" class="step-btn disabled">3. Второй слой (Скоро)</a>
+                <a href="#" class="step-btn disabled">4. Верхняя грань OLL (Скоро)</a>
+                <a href="#" class="step-btn disabled">5. Углы и рёбра PLL (Скоро)</a>
             </div>
         </div>
     </main>
