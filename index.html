@@ -5,58 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кубик Рубика - Обучение</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .steps {
-            list-style: none;
-            padding: 0;
-        }
-        .steps li {
-            background: #ecf0f1;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #3498db;
-        }
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #2c3e50; color: white; text-align: center; padding: 2rem 1rem; }
+        main { max-width: 800px; margin: 20px auto; padding: 0 15px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .steps { list-style: none; padding: 0; }
+        .steps li { margin-bottom: 10px; }
+        .steps a { display: block; background: #ecf0f1; padding: 15px; border-radius: 6px; border-left: 4px solid #3498db; text-decoration: none; color: #2c3e50; font-weight: bold; transition: background 0.2s; }
+        .steps a:hover { background: #d5dbdb; }
+        .steps a.disabled { opacity: 0.5; pointer-events: none; border-left-color: #95a5a6; }
     </style>
 </head>
 <body>
@@ -73,17 +31,15 @@
         </div>
 
         <div class="card">
-            <h2>Этапы обучения</h2>
+            <h2>Этапы сборки</h2>
             <ul class="steps">
-                <li><strong>Шаг 1:</strong> Крест</li>
-                <li><strong>Шаг 2:</strong> Первый слой</li>
-                <li><strong>Шаг 3:</strong> Второй слой</li>
-                <li><strong>Шаг 4:</strong> OLL (Сборка креста и "правой рыбки")</li>
-                <li><strong>Шаг 5:</strong> PLL (Перемещение углов и рёбер)</li>
+                <!-- В будущем ссылки на другие уроки добавятся сюда -->
+                <li><a href="cross.html">1. Крест</a></li>
+                <li><a href="#" class="disabled">2. Первый слой (Скоро)</a></li>
+                <li><a href="#" class="disabled">3. Второй слой (Скоро)</a></li>
+                <li><a href="#" class="disabled">4. Верхняя грань (OLL) (Скоро)</a></li>
+                <li><a href="#" class="disabled">5. Углы и рёбра (PLL) (Скоро)</a></li>
             </ul>
-            <p style="text-align: center; margin-top: 20px;">
-                <a href="#" class="btn">Начать обучение (Скоро)</a>
-            </p>
         </div>
     </main>
 
